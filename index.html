@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EP's Glam & Fashion | Nails, Makeup, Lashes & Waxing in Koforidua - Akwadum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <div id="loadingScreen" class="auth-gate">
+    <div class="gate-card gate-loading">
+      <span class="brand">EP's <span>Glam &amp; Fashion</span></span>
+      <p class="gate-sub">Verifying your session...</p>
+    </div>
+  </div>
+
+  <div id="appShell" style="display:none;">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" id="siteBrandHeader">EP's <span>Glam &amp; Fashion</span></a>
+        <button class="menu-toggle" id="menuToggleBtn" aria-label="Toggle Menu">☰</button>
+        <nav>
+          <ul id="navMenu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#services" class="nav-link">Services &amp; Prices</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li id="navAdminItem" style="display:none;"><a href="admin.html" class="btn btn-gold btn-sm nav-link">Admin Studio</a></li>
+            <li><button type="button" id="navClientBtn" class="nav-btn-link">My Loyalty &amp; Bookings</button></li>
+            <li><a href="#book" class="btn btn-primary btn-sm nav-link">Book Now</a></li>
+            <li><button type="button" id="navLogoutBtn" class="nav-btn-link logout-link">Log Out</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge" id="heroLocationBadge">Koforidua – Akwadum &bull; Beauty Studio</span>
+          <h1 id="heroTitleEl">Elevate Your Look, Own Your Glow.</h1>
+          <p class="slogan" id="heroSloganEl">“Celebrating real beauty, building lasting confidence.”</p>
+          <p id="heroDescEl" class="hero-desc"></p>
+          <div class="hero-actions">
+            <a href="#book" class="btn btn-primary">Book an Appointment</a>
+            <button type="button" id="heroLoyaltyBtn" class="btn btn-outline">Loyalty Card &amp; Past Bookings</button>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Signature Studio Menu</h3>
+          <p class="hero-card-sub">All prices listed in Ghana Cedis (GH₵).</p>
+          <ul class="hero-list">
+            <li>Nail Enhancements <span>From GH₵ 50.00</span></li>
+            <li>Soak Off (Short/Med/Long) <span>GH₵ 15.00 – 25.00</span></li>
+            <li>Manicure &amp; Pedicure <span>From GH₵ 50.00</span></li>
+            <li>Makeup Artistry <span>From GH₵ 200.00</span></li>
+            <li>Lash Extensions <span>From GH₵ 50.00</span></li>
+            <li>Body &amp; Facial Waxing <span>From GH₵ 30.00</span></li>
+          </ul>
+          <a href="#book" class="btn btn-champagne btn-full">Reserve Your Chair</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services &amp; Price List (GH₵)</h2>
+          <p>Browse our services, lengths, and sub-treatments below. Click <strong>Book</strong> next to any item to select it automatically.</p>
+        </div>
+
+        <div class="tabs" id="serviceFilterTabs">
+          <button type="button" class="tab-btn active" data-cat="all">All Services</button>
+          <button type="button" class="tab-btn" data-cat="nails">Nail Studio</button>
+          <button type="button" class="tab-btn" data-cat="makeup">Makeup</button>
+          <button type="button" class="tab-btn" data-cat="lashes">Lashes</button>
+          <button type="button" class="tab-btn" data-cat="waxing">Waxing</button>
+        </div>
+
+        <div id="waxingNoticeBanner" class="waxing-notice">
+          <span class="notice-icon">⚠️</span>
+          <span id="waxingNoticeText">Notice: We do not offer eyebrow waxing.</span>
+        </div>
+
+        <div class="services-grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container about-grid">
+        <div>
+          <span class="badge">Our Promise</span>
+          <h2 class="serif about-heading">Why Choose EP's Glam &amp; Fashion?</h2>
+          <p id="aboutTextEl" class="about-copy"></p>
+          <p class="about-copy">
+            Whether you are stepping in for a fresh builder gel set, a relaxing pedicure with complimentary foot massage, soft glam makeup, or silky-smooth waxing, you'll leave feeling pampered and confident.
+          </p>
+        </div>
+
+        <div class="pillars">
+          <div class="pillar">
+            <h4>Clean &amp; Hygienic</h4>
+            <p>Sanitized tools and fresh disposable supplies for every single client.</p>
+          </div>
+          <div class="pillar">
+            <h4>Tailored to You</h4>
+            <p>Shades, lengths, and styles matched to your skin tone and lifestyle.</p>
+          </div>
+          <div class="pillar">
+            <h4>Lasting Quality</h4>
+            <p>Premium gels, acrylics, lashes, wax, and makeup built to stay flawless.</p>
+          </div>
+          <div class="pillar">
+            <h4>Loyalty Rewards</h4>
+            <p>Collect 10 service ticks on your digital loyalty card and enjoy 20% off your 10th visit!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Work &amp; Gallery</h2>
+          <p>Explore real photos under each service, plus watch our latest transformations on TikTok.</p>
+        </div>
+        <div class="tabs" id="galleryFilterTabs"></div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+        <div class="tiktok-cta" id="tiktokCtaBox"></div>
+      </div>
+    </section>
+
+    <section id="book" class="booking-section">
+      <div class="container">
+        <div class="booking-box">
+          <div class="contact-info">
+            <span class="badge">Appointments</span>
+            <h3>Book Your Session</h3>
+            <p>Choose your service, an open date, and an available time slot below. Submitting saves your booking to your history and opens WhatsApp.</p>
+
+            <div class="info-item">
+              <strong>Location</strong>
+              <span id="contactLocationEl">Koforidua – Akwadum, Eastern Region</span>
+            </div>
+            <div class="info-item">
+              <strong>Call / WhatsApp</strong>
+              <span id="contactPhoneEl"></span>
+            </div>
+            <div class="info-item">
+              <strong>TikTok Pages</strong>
+              <span id="contactTiktokEl"></span>
+            </div>
+
+            <div class="loyalty-promo-box">
+              <h4>🎁 Your Loyalty Reward Card</h4>
+              <p>Track your 10-circle stamp card and past appointments anytime. Get <strong>20% OFF</strong> on your 10th service!</p>
+              <button type="button" id="promoLoyaltyBtn" class="btn btn-primary btn-sm">View Loyalty &amp; Past Bookings</button>
+            </div>
+          </div>
+
+          <form id="bookingForm">
+            <div class="form-row">
+              <div>
+                <label for="clientName">Your Name</label>
+                <input type="text" id="clientName" required />
+              </div>
+              <div>
+                <label for="clientPhone">Phone / WhatsApp</label>
+                <input type="tel" id="clientPhone" required />
+              </div>
+            </div>
+
+            <div>
+              <label for="serviceSelect">Select Service &amp; Option</label>
+              <select id="serviceSelect" required></select>
+            </div>
+
+            <div>
+              <label>1. Choose an Available Date</label>
+              <div id="customerDatesGrid" class="picker-grid"></div>
+            </div>
+
+            <div>
+              <label>2. Choose an Available Time</label>
+              <div id="customerTimesGrid" class="picker-grid">
+                <div class="empty-msg full-span">Please select a date above first.</div>
+              </div>
+            </div>
+
+            <div>
+              <label for="notes">Extra Notes (Optional)</label>
+              <textarea id="notes" rows="2" placeholder="Any specific nail shape, lash style, or occasion details?"></textarea>
+            </div>
+
+            <div id="formError" class="form-error"></div>
+            <button type="submit" id="submitBookingBtn" class="btn btn-primary">Confirm &amp; Send via WhatsApp</button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <a href="#home" class="brand footer-brand" id="footerBrandEl">EP's <span>Glam &amp; Fashion</span></a>
+        <p class="footer-slogan" id="footerSloganEl"></p>
+        <p class="footer-loc" id="footerLocEl"></p>
+        <div class="socials" id="footerSocialsEl"></div>
+        <div class="copyright">
+          <span>&copy; <span id="year"></span> EP's Glam &amp; Fashion. All rights reserved.</span>
+          <button type="button" id="footerLoyaltyBtn" class="footer-link">Loyalty &amp; Past Bookings</button>
+          <a href="admin.html" class="footer-link">Admin Studio</a>
+          <a href="login.html" class="footer-link">Login Page</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="clientModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <h3 class="serif modal-title">My Loyalty &amp; Past Bookings</h3>
+          <small class="muted-text">10th service unlocks 20% OFF</small>
+        </div>
+        <button type="button" id="closeClientModalBtn" class="modal-close" aria-label="Close">&times;</button>
+      </div>
+
+      <div class="toggle-row client-head-meta">
+        <div>
+          <strong id="clientWelcomeName"></strong>
+          <div id="clientWelcomeMeta" class="muted-text small-text"></div>
+        </div>
+        <button type="button" id="modalLogoutBtn" class="btn btn-outline btn-sm">Log Out</button>
+      </div>
+
+      <div class="portal-tabs left-tabs">
+        <button type="button" class="tab-btn active" data-cdash="loyalty">Loyalty Card (20% OFF)</button>
+        <button type="button" class="tab-btn" data-cdash="history">Past Bookings (<span id="clientBookingCount">0</span>)</button>
+      </div>
+
+      <div id="client-tab-loyalty" class="portal-panel active">
+        <div id="clientLoyaltyCardMount"></div>
+        <p class="muted-text small-text">
+          <strong>How it works:</strong> After every completed service at EP's Glam &amp; Fashion, the Admin ticks one circle on your card.
+          On your <strong>10th circle</strong>, you receive <strong>20% OFF</strong> your service!
+        </p>
+      </div>
+
+      <div id="client-tab-history" class="portal-panel">
+        <div id="clientBookingsList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
+  
